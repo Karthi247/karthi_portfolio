@@ -1,24 +1,22 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  
-  // server: {
-    //   host: "::",
-    //   port: 8080,
-    // },
-    // plugins: [
-    //   react(),
-    //   mode === "development" && componentTagger(),
-    // ].filter(Boolean),
-    plugins: [react()],
-    base: mode === "production" ? "/karthi_portfolio/" : "/", // 👈 repo name for GitHub Pages
-    resolve: {
+  base: mode === "production" ? "/karthi_portfolio/" : "/",
+  plugins: [react()],
+  resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: "static/[name]-[hash][extname]",   // CSS, images, fonts
+        chunkFileNames: "static/[name]-[hash].js",         // dynamic imports
+        entryFileNames: "static/[name]-[hash].js",         // main JS
+      },
     },
   },
 }));
