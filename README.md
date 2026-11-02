@@ -1,73 +1,243 @@
-# Welcome to your Lovable project
+# Karthi C | Java Backend Developer Portfolio
 
-## Project info
+A modern, responsive personal developer portfolio built to showcase my technical skills, projects, education, and development experience.
 
-**URL**: https://lovable.dev/projects/f210a972-6373-4e94-8132-4a565295046c
+The portfolio highlights my journey as a **Java Backend Developer and Full Stack Developer**, with a focus on building backend applications, REST APIs, database-driven systems, and responsive user interfaces.
 
-## How can I edit this code?
+## Live Demo
 
-There are several ways of editing your application.
+- **Portfolio:** Add your deployed portfolio URL here
+- **GitHub:** [Karthi247](https://github.com/Karthi247)
+- **LinkedIn:** Add your LinkedIn profile URL here
 
-**Use Lovable**
+## About Me
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f210a972-6373-4e94-8132-4a565295046c) and start prompting.
+Hello! I'm **Karthi C**, a Computer Science and Engineering graduate from Tamil Nadu, India.
 
-Changes made via Lovable will be committed automatically to this repo.
+I'm an aspiring Java Backend Developer with practical experience in Java, Spring Boot, React.js, MySQL, and REST API development.
 
-**Use your preferred IDE**
+I enjoy developing real-world applications, designing backend systems, working with databases, and continuously improving my problem-solving and software development skills.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+I'm currently looking for opportunities as a:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Junior Java Developer
+- Java Backend Developer
+- Software Developer
+- Full Stack Developer
 
-Follow these steps:
+## Technologies Used
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Backend Development
+- Java
+- Spring Boot
+- Spring MVC
+- Spring Security
+- Hibernate / JPA
+- REST APIs
+- Microservices
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Frontend Development
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Bootstrap
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Database
+- MySQL
+- SQL
+- Database Design
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Tools & DevOps
+- Git
+- GitHub
+- Maven
+- Docker
+- Jenkins
+- GitHub Actions
+- Linux
+
+### Cloud
+- AWS EC2
+- AWS RDS
+- AWS S3
+- AWS VPC
+- AWS IAM
+- AWS Lambda
+- API Gateway
+- CloudWatch
+
+## Featured Projects
+
+### 1. Government Welfare Advisory System
+
+A full-stack application that helps citizens discover government welfare schemes based on their personal information through rule-based eligibility validation and machine learning recommendations.
+
+**Technologies:** Java, Spring Boot, React.js, MySQL, Python, Flask, Machine Learning
+
+**Key Features:**
+- User authentication and role-based access.
+- Dynamic welfare scheme recommendations.
+- Rule-based eligibility validation.
+- Machine learning-based eligibility scoring.
+- Eligibility history management.
+- REST API integration between backend and ML service.
+
+**Repository:** [Government Welfare Advisory System](https://github.com/Karthi247/Government-Welfare-Advisory-System)
+
+### 2. Job Application Tracker
+
+A personalized application tracking system designed to help job seekers organize and monitor their job search activities.
+
+**Technologies:** Java, Spring Boot, JSP, MySQL, Hibernate/JPA
+
+**Key Features:**
+- User registration and login.
+- Personalized dashboard.
+- Job application management.
+- Application status tracking.
+- Kanban-style application workflow.
+- Interview and deadline calendar.
+- Email reminders.
+
+### 3. Task Management System
+
+A full-stack task management application designed to organize tasks and manage daily workflows.
+
+**Technologies:** Java, Spring Boot, React.js, MySQL
+
+**Repository:** [Task Management System](https://github.com/Karthi247/Task-Management-System)
+
+### 4. Employee Management System
+
+An employee management application for maintaining employee information and performing employee-related operations.
+
+**Technologies:** Java, Spring Boot, React.js, MySQL
+
+**Repository:** [Employee Management System](https://github.com/Karthi247/Employee_Management_System)
+
+### 5. Event Registration System
+
+An event management application designed to allow users to explore events and manage event registrations.
+
+**Technologies:** Java, Spring Boot, React.js, MySQL
+
+**Potential functionality:**
+- Event browsing and details.
+- User registration and authentication.
+- Event registration management.
+- Administrative event management.
+
+### 6. Student Management System
+
+A student management application designed to manage student information, authentication, and course-related records.
+
+**Technologies:** Java, Spring Boot, JSP, MySQL, Hibernate/JPA
+
+**Key Features:**
+- Student registration and login.
+- Enrollment-number-based student login.
+- Student information management.
+- Course management.
+- Database-driven student records.
+
+> Note: Project descriptions and features should reflect the actual implementation. Update or remove any feature that is not currently implemented.
+
+## Portfolio Features
+
+- Modern and minimal developer portfolio design.
+- Responsive layout for desktop, tablet, and mobile.
+- Dedicated About, Skills, Projects, and Contact sections.
+- Project showcase with technology tags.
+- GitHub and professional profile links.
+- Smooth navigation and interactive UI elements.
+- Reusable React components.
+- Consistent typography, colors, and spacing.
+
+## Getting Started
+
+Follow these steps to run the portfolio locally.
+
+### Prerequisites
+
+- Node.js
+- npm
+- Git
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone <YOUR_PORTFOLIO_REPOSITORY_URL>
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd <YOUR_PROJECT_FOLDER>
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Start the development server**
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+**5. Open in your browser**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```text
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+The development URL may vary depending on your Vite configuration.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```text
+portfolio/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── layouts/
+│   ├── styles/
+│   ├── data/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+└── README.md
+```
 
-This project is built with:
+*The structure above is illustrative. Adjust it to match the actual repository.*
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Contact
 
-## How can I deploy this project?
+I'm open to entry-level opportunities, software development roles, and collaboration on interesting projects.
 
-Simply open [Lovable](https://lovable.dev/projects/f210a972-6373-4e94-8132-4a565295046c) and click on Share -> Publish.
+- **Name:** Karthi C
+- **Location:** Tamil Nadu, India
+- **GitHub:** [github.com/Karthi247](https://github.com/Karthi247)
+- **LinkedIn:** Add your LinkedIn URL
+- **Email:** Add your professional email
 
-## Can I connect a custom domain to my Lovable project?
+## Career Objective
 
-Yes, you can!
+To start my career as a Java Backend Developer or Software Developer, where I can apply my knowledge of Java, Spring Boot, databases, REST APIs, and full-stack development while continuously learning and contributing to real-world software projects.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Thank you for visiting my portfolio!**
+
+If you find my projects interesting, feel free to explore my repositories and connect with me.
