@@ -1,20 +1,27 @@
-import React, { useRef } from "react";
-import useIntersectionObserver from "@/hooks/useIntersectionObserver";
-import "@/index.css"; // make sure CSS is loaded
+import { ReactNode, useEffect, useRef, useState } from "react";
 
-interface Props {
-  children: React.ReactNode;
-}
-
-const FadeSection: React.FC<Props> = ({ children }) => {
+const FadeSection = ({ children }: { children: ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const isVisible = useIntersectionObserver(ref, { threshold: 0.2 });
+  const [visible, setVisible] = useState(false);
 
-  return (
-    <div ref={ref} className={`fade-section ${isVisible ? "show" : ""}`}>
-      {children}
-    </div>
-  );
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
+      setVisible(true);
+      return;
+    }
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+        observer.disconnect();
+      }
+    }, { threshold: 0.12 });
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  return <div ref={ref} className={`reveal${visible ? " reveal--visible" : ""}`}>{children}</div>;
 };
 
 export default FadeSection;
