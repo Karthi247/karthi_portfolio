@@ -15,9 +15,7 @@ const About = () => {
           <div className="bg-card rounded-2xl p-8 shadow-soft">
             <div className="prose prose-lg max-w-none">
               <p className="text-foreground leading-relaxed mb-6">
-                Highly motivated and detail-oriented Full Stack Developer and React Developer with a strong 
-                foundation in web technologies. Skilled in React.js, JavaScript, HTML, CSS, Java, Node.js, and 
-                SQL. Passionate about building scalable, user-friendly applications with a focus on clean, 
+                 Passionate about building scalable, user-friendly applications with a focus on clean, 
                 maintainable code.
               </p>
               
